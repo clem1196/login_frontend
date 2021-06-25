@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div>
-      <h2 class="text-center">{{ title }}</h2>
-    </div>
-    <div class="mt-4">
-      <h4>Counter</h4>
-      <button @click="Aumentar">Aumentar Precio</button>
-      <button @click="Disminuir">Disminuir Precio</button>
-      <div>El precio del {{ producto }} es: {{ price }}</div>
+  <div class="container text-center mt-5">
+    <div class="card m-auto">
+      <button class="btn btn-light btn-lg">Inicio</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aliquid
+        cumque reprehenderit, animi est quaerat doloremque magnam, in excepturi
+        assumenda quod numquam dolorum similique necessitatibus autem ad modi at
+        quisquam.
+      </p>
     </div>
   </div>
 </template>
@@ -17,28 +17,10 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Welcome to Your Vue.js App",
-    },
-  },
-  data() {
-    return {
-      //Precio
-      price: 0,
-      producto: "plátano",
-    };
-  },
-  methods: {
-    Aumentar() {
-      //const precioProducto = this.precio++;
-      this.price++;
-    },
-    Disminuir() {
-      //const precioProducto = this.precio++;
-      this.price--;
+      default: "Home",
     },
   },
 };
 </script>
-
 <style scoped>
 </style>
